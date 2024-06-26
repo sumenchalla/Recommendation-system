@@ -1,0 +1,9 @@
+ipykernel
+pandas
+pyPDF2
+numpy
+streamlit
+langchain
+
+
+-e .
