@@ -1,0 +1,9 @@
+root_dir : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts"  # This is the root directory in my local system
+
+data_ingestion:
+  path          : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Ingestion"
+  resume_url    : "" #attach the source url of cloud from where all the resumes present
+  projects_url  : "" # attah the url of cloud from where all projects can be downloaded
+  resume_path   : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Ingestion\\resumes.zip"
+  project_path  : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Ingestion\\projects.zip"
+  unzip_path    : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Ingestion"
