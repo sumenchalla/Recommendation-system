@@ -1,0 +1,6 @@
+{
+    "name"    : "name of the candidate here",
+    "skills"  : "skills of the candidate that are mentioned in the resume ",
+    "projects": "[details regarding projects of the candidate that are mention in the resume]",
+    "certifications" : "certifications of the candidate that are mention in the resume"
+}

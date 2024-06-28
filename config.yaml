@@ -1,4 +1,5 @@
-root_dir : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts"  # This is the root directory in my local system
+root_dir : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\"  # This is the root directory in my local system 
+                                                                       # yo have to chaneg this location according your system
 
 data_ingestion:
   path          : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Ingestion"
@@ -7,3 +8,7 @@ data_ingestion:
   resume_path   : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Ingestion\\resumes.zip"
   project_path  : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Ingestion\\projects.zip"
   unzip_path    : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Ingestion"
+
+data_transformation:
+  resumes_path   : "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Ingestion\\Resumes"
+  df_path        :  "D:\\Data Science\\Gen AI\\Recomender_system\\artifacts\\Data_Transformation"

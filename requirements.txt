@@ -4,7 +4,11 @@ pyPDF2
 numpy
 streamlit
 langchain
-
+langchain_community
+huggingface_hub
+ctransformers
+sentence-transformers
+python-dotenv
 
 
 -e .

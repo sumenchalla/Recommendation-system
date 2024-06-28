@@ -13,3 +13,8 @@ class dataingestionconfig:
     resume_path    = data["data_ingestion"]["resume_path"]
     project_path   = data["data_ingestion"]["project_path"]
     unzip_path     = data["data_ingestion"]["unzip_path"]
+
+@dataclass
+class datatransformationconfig:
+    resumes        = data["data_transformation"]["resumes_path"]
+    Trans_path     = data["data_transformation"]["df_path"]
