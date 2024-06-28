@@ -55,6 +55,7 @@ class Data_Transformation:
 
         except Exception as e:
             logging.error(f"{e} error occured while loading {repo_id} model")
+            raise e
 
         try:
             folder_path = self.transformation.resumes
@@ -77,6 +78,7 @@ class Data_Transformation:
 
         except Exception as e:
             logging.error(f"{e} error occured while creating dict_list")
+            raise e
 
         try:
             df = pd.DataFrame(dict_list)
@@ -84,10 +86,11 @@ class Data_Transformation:
                 project =""
                 for j in df["projects"][i]:
                     project+=j
-                df["projects"][i]=project
+                df[i,"projects"]=project
 
         except Exception as e:
             logging.error(f"{e} error occured during conversion of dict_list into dataframe")
+            raise e
 
         os.makedirs(self.transformation.Trans_path,exist_ok=True)
 
@@ -102,7 +105,7 @@ class Data_Transformation:
             df.fillna("",inplace=True)
             df["description"] = ""
             for i in range(len(df["name"])):
-                df["description"][i]=df["skills"][i]+ " "+ df["projects"][i]+ " "+ df["certifications"][i]+" " + df["internships"][i]
+                df.loc[i,"description"]=df["skills"][i]+ " "+ df["projects"][i]+ " "+ df["certifications"][i]+" " + df["internships"][i]
             df["description"] = df["description"].apply(lambda row: str(row).replace("[","").replace("]","").replace("|","").replace("'","").replace(",",""))
             logging.info("Data frame was sucessfully cleaned")
         except Exception as e:
@@ -128,17 +131,17 @@ class Data_Transformation:
             os.makedirs(os.path.join(self.transformation.Trans_path,"embedings"),exist_ok=True)
 
             with open(os.path.join(self.transformation.Trans_path,"models\\model1.pkl"),"wb") as f:
-                pickle.dump("model1.pkl",f)
+                pickle.dump(model1,f)
             with open(os.path.join(self.transformation.Trans_path,"models\\model2.pkl"),"wb") as f:
-                pickle.dump("model2.pkl",f)
+                pickle.dump(model2,f)
             with open(os.path.join(self.transformation.Trans_path,"models\\model3.pkl"),"wb") as f:
-                pickle.dump("model3.pkl",f)
+                pickle.dump(model3,f)
             with open(os.path.join(self.transformation.Trans_path,"embedings\\embedings1.pkl"),"wb") as f:
-                pickle.dump("embedings1.pkl",f)
+                pickle.dump(embedings1,f)
             with open(os.path.join(self.transformation.Trans_path,"embedings\\embedings2.pkl"),"wb") as f:
-                pickle.dump("embedings2.pkl",f)
+                pickle.dump(embedings2,f)
             with open(os.path.join(self.transformation.Trans_path,"embedings\\embedings3.pkl"),"wb") as f:
-                pickle.dump("embedings3.pkl",f)   
+                pickle.dump(embedings3,f)   
 
 
         except Exception as e:
