@@ -47,7 +47,7 @@ HUGGINGFACE_API_KEY=your_access_token
 To run the application using Streamlit, execute the following command:
 
 ```bash
-streamlit run src/app.py
+streamlit run app.py
 ```
 
 
