@@ -41,7 +41,7 @@ Based on your machine configuration, visit the [PyTorch installation page](https
 Go to [Hugging Face](https://huggingface.co/) and create an access token.
 Copy the token and create a .env file in the src/components directory:
 #### Inside src/components/.env
-HUGGING_FACE_TOKEN=your_access_token
+HUGGINGFACE_API_KEY=your_access_token
 
 
 ### Run the Application
