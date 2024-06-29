@@ -11,11 +11,10 @@ A recommendation system using LLM to recommend the best possible candidate for p
 
 ### Clone the Repository
 
-First, clone the repository to your local machine:
+First, clone the repository to your local machine in your required location and change the respective location in config.yaml and src/config/configuration.py:
 
 ```bash
 git clone https://github.com/sumenchalla/Recommendation-system
-cd your-repo-name
 ```
 
 ### Create and Activate Conda Environment
