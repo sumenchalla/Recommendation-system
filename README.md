@@ -14,7 +14,7 @@ A recommendation system using LLM to recommend the best possible candidate for p
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/sumenchalla/Recommendation-system
 cd your-repo-name
 ```
 
