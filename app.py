@@ -58,5 +58,22 @@ else:
     embedings= embedings3
 
 if st.button("Recommend"):
-    st.text_area(label="Recommended candidates are",value=Recommend.recommend(data=text,model=model,embedings=embedings))
+    names=Recommend.recommend(data=text,model=model,embedings=embedings)
+    col1,col2,col3,col4,col5=st.columns(5)
+    with col1:
+        st.text(names[0])
+        st.image("OIP.jpeg")
+    with col2:
+        st.text(names[1])
+        st.image("OIP.jpeg")
+    with col3:
+        st.text(names[2])
+        st.image("OIP.jpeg")
+    with col4:
+        st.text(names[3])
+        st.image("OIP.jpeg")
+    with col5:
+        st.text(names[4])
+        st.image("OIP.jpeg")
+
 
